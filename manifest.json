@@ -1,0 +1,31 @@
+{
+    "manifest_version": 3,
+    "name": "CabView",
+    "version": "1.1.2",
+    "homepage_url": "https://cabview.nkir.ch/api/videos",
+    "description": "Adds videos to cabview.nkir.ch playlist",
+
+    "icons": {
+        "48": "icons/train-48.png"
+    },
+
+    "action": {
+        "default_icon": {
+            "16": "icons/train-gray-16.png",
+            "32": "icons/train-gray-32.png",
+            "64": "icons/train-gray-64.png"
+        },
+        "default_title": "CabView"
+    },
+
+    "background": {
+        "service-worker": "background.js"
+    },
+
+    "permissions": [
+        "<all_urls>",
+        "tabs",
+        "webNavigation",
+        "notifications"
+    ]
+}
